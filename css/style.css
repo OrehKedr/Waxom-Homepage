@@ -34,14 +34,14 @@
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 .content {
-  width: 1920px;
+  width: 1903px;
   margin: 0 auto;
   padding: 0;
   border: 1px solid black;
   box-sizing: border-box;
+  overflow: hidden;
 }
 header {
   position: relative;
@@ -177,7 +177,7 @@ header {
 }
 .slider {
   padding: 285px 150px 0;
-  width: 1620px;
+  width: 1603px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -654,7 +654,7 @@ header {
   overflow: auto;
 }
 .excellent-for-md-pic {
-  margin: 0 30px 0 0;
+  margin: 0 13px 0 0;
   float: left;
 }
 .excellent-for-md-content {
@@ -747,7 +747,7 @@ header {
 .counters-item svg {
   fill: #c7b299;
 }
-.counters-item span {
+.counters-item-count {
   display: block;
   width: 100%;
   margin: 30px 0 0 0;
@@ -758,7 +758,8 @@ header {
   text-align: center;
   color: #ffffff;
 }
-.counters-item p {
+.counters-item-title {
+  display: block;
   margin: 21px 0 0 0;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
