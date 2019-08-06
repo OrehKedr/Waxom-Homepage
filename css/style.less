@@ -1091,34 +1091,26 @@ header{
     text-align: center;    
 }
 
-.rp-btn-common(){
-    width: 23px;
-    height: 23px;
-    display: inline-block;    
-    outline: none;
-    border: none;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: transparent;
-}
-
-.rp-button-left{
-    .rp-btn-common;
-    background-image: url(../img/recent-posts-arrow-left.svg);
-    margin-right: 8px;
-}
-
+.rp-button-left,
 .rp-button-right{
-    .rp-btn-common;
-    background-image: url(../img/recent-posts-arrow-right.svg);
+    width: 30px;
+    height: 30px;
+    display: inline-block; 
+    padding: 0;
+    outline: none;
+    border: none;    
+    background-color: transparent;
+    
+    svg{
+      fill: rgb(209, 209, 209);
+    }
 }
 
-.rp-button-left:hover{
-    background-image: url(../img/recent-posts-arrow-left-active.svg);
-}
-
+.rp-button-left:hover,
 .rp-button-right:hover{
-    background-image: url(../img/recent-posts-arrow-right-active.svg);
+    svg{
+        fill: #c7b299;
+    }
 }
 
 .parthners{
@@ -1407,6 +1399,7 @@ header{
     }
     
     .header-menu-icon{
+        display: block;
         position: relative;
         background: rgba(255,255,255,1);
         width: 90%;
